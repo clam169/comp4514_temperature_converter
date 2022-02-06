@@ -11,7 +11,12 @@ public class IndexModel : PageModel
     public IndexModel(ILogger<IndexModel> logger)
     {
         _logger = logger;
-    }
+      this.InputValue = 0;
+      this.ConvertedValue = 0;
+      this.ConvertFrom = "Fahrenheit0";
+      this.ConvertTo = "Fahrenheit0";
+
+  }
 
     public void OnGet()
     {

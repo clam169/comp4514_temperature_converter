@@ -30,7 +30,8 @@ namespace Temperature
                     result = temperature - 273d;
                     break;
                 case ConversionMode.Fahrenheit_to_Kelvin:
-                    result = (5d / 9d) * (temperature - 32d) + 273d;
+                //broke function to fail test (-500)
+                    result = (5d / 9d) * (temperature - 32d) + 273d - 500;
                     break;
             }
             return Math.Round(result, 2);
